@@ -568,24 +568,24 @@ When the component unmounts, it’s important to clean up any active connections
       
    Using `ref` helps encapsulate the logic related to the MQTT client, keeping it separate from the component’s state management. This separation of concerns makes the code cleaner and easier to maintain.
   
-   Conclusion
+   #Conclusion
   
   Using `ref` in this project enhances the management of the MQTT client by providing a way to store mutable references that persist across renders. This approach improves performance, simplifies           cleanup, and keeps the component logic organized. Overall, leveraging `ref` is a best practice in React for handling instances and mutable data that do not need to trigger re-renders.
 
- ##Challenges and Solutions
+ ###Challenges and Solutions
 
-  challenge  overload and long time loading :
+  ##challenge  overload and long time loading :
   
   We encountered a problem with the application taking too long to load, which led us to use **Lodash** to optimize the frequency of location updates and improve performance. By utilizing **ref**, we efficiently managed the MQTT client instance without causing unnecessary re-renders. Additionally, by setting the quality of service (QoS) level to 0 on the MQTT broker, we reduced overhead since there was no need for QoS 1 or 2, contributing to a faster loading time for the application.
   
-  Challenge connect to mqt broker:
+  ##Challenge connect to mqt broker:
   
   I faced a challenge connecting to the MQTT broker in my project. To troubleshoot, I used MQTT Explorer, a graphical MQTT client, to verify the broker's configuration and connectivity. This tool allowed me to confirm the broker's host, port, authentication settings, and available topics. By successfully subscribing to topics and publishing messages via MQTT Explorer, I ensured the broker was properly configured. This step helped isolate the issue to my application code or network settings. 
 
    ![image](https://github.com/user-attachments/assets/b73fde37-8e7e-4d5d-9c46-d1f863f22810)
 
   
-  packages outdated or incompatible 
+  ##packages outdated or incompatible 
   
   I faced challenges setting up the necessary packages for my React Native project, particularly ensuring compatibility and optimal configurations. To address this, I used React Native Audit, a tool that analyzes the project's dependencies and environment. It helped identify outdated or incompatible packages and provided recommendations for updates. This streamlined the setup process, ensuring my project was aligned with the latest standards and reducing potential runtime issues. By leveraging this tool, I resolved dependency-related challenges effectively.
   
