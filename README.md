@@ -1,10 +1,10 @@
-##Title
+###Title
 
 traking app
 A traking app built with React Native / Expo. Using mqtt broker as backend to connect, subscribe and unsubscribe, and send and receive messages(location) from clients to MQTT brokers.
 
 
-##Description
+###Description
 
 Target audience and problem it solves
 The tracking app allows users to view their real-time location on an interactive map. It aligns with the phone's orientation using the Device Orientation API, facilitating navigation. A path is drawn to represent movements, and page with a dynamic compass helps with orientation 
@@ -53,10 +53,10 @@ High-level overview of app functionality
 
 
 
-## Technology Stack
+### Technology Stack
 
 
-Built With:
+##Built With:
 
 react-native,
 expo,
@@ -77,21 +77,21 @@ react-native-svg,
 react-native-community/slider,
 
  
-Expo go :
+##Expo go :
 
   Expo Go is a companion mobile app that enables developers to preview and test their projects instantly on real devices. Expo Go can be considered as a sandbox environment for React Native apps.
 
-Expo CLI:
+##Expo CLI:
 
   The expo package provides a small and powerful CLI tool npx expo which is designed to keep you moving fast during app development.
   When working with Expo projects, the command `npx expo start` offers flexibility and convenience. Unlike `expo start`, which requires a globally installed version of Expo CLI, `npx expo start`             temporarily downloads and uses the version of Expo CLI specified for the project or the latest available version. This ensures compatibility and eliminates the need to manage a global installation.        While    it may be slightly slower due to potential downloads, it guarantees that the correct version is used, especially in environments where multiple projects might depend on different versions of      Expo. For     these reasons, I chose to use `npx expo start` in my project to maintain consistency and avoid potential version conflicts.
   
 
-why using ios:
+##why using ios:
 
   In this project, the decision to use only an iOS application was made to ensure optimal compatibility and functionality with the tools and libraries utilized, particularly for MQTT communication. While    libraries like @to/react-native-mqtt are well-suited for React Native applications, they are specifically designed to operate in mobile environments and do not natively support web platforms. By           focusing solely on iOS, we were able to leverage the native capabilities of the operating system, simplify project configurations, and reduce cross-platform challenges.
 
-Development Tools Used
+##Development Tools Used
 
   •	[Expo Go](https://expo.dev/go) installed on a physical device(my phone)
   
@@ -105,7 +105,7 @@ Development Tools Used
   
   •	[MQTT Explorer ](https://mqtt-explorer.com/)
   
-##Installation and Setup
+###Installation and Setup
 
   Starting the Project:
   
@@ -120,7 +120,7 @@ Development Tools Used
 
   The development server is typically hosted on http://localhost:8081. It hosts a manifest from / which the client uses to request the JavaScript bundle from the bundler.
   
-  Manifest:
+  ##Manifest:
 
   An Expo app manifest is similar to a web app manifest. It provides information that Expo Go needs to know how to run the app and other relevant data.
 
@@ -144,7 +144,7 @@ Development Tools Used
  
 
 
-Entry Point of the App
+##Entry Point of the App
 
 The entry point of the app initializes the application and executes when the development server starts. It is built using core React Native components, including:
 
@@ -207,7 +207,7 @@ The app utilizes @expo/vector-icons for scalable, visually appealing icons. Thes
 
 
 
-The core development loop
+##The core development loop
 
 ![image](https://github.com/user-attachments/assets/bbcd683f-1419-427c-a060-0fbf4866b696)
 
@@ -237,9 +237,9 @@ Together, these steps form a cyclical process where each stage supports the prog
 
 
 
-# #Application Pages and Features
+###Application Pages and Features
 
-/Campss page
+##Campss page
  
 
 1.time display :
@@ -280,7 +280,7 @@ It allows the user to select a value between 0 and 100, with steps of 5.
 
 
 
- map page :
+ ##map page :
 
  ![image](https://github.com/user-attachments/assets/b520a3c6-6fc1-4d03-b5b1-34921b4aebc5)
 
@@ -306,7 +306,7 @@ We use this Component API :
   
   The <Polyline /> component will be used to draw the user's path on the map. By providing an array of coordinates, it will visually represent the route taken, with customizable color and width for clarity.
 
-Using `react-native-maps` for rendering the map
+##Using `react-native-maps` for rendering the map
 
   In this project, I used the react-native-maps library to implement map tracking, along with the <MapView /> and <Polyline /> components to display the map and draw the user's path. For location           tracking, I relied on the expo-location library instead of the Google Maps API, as it offers a simpler and more integrated solution within the Expo ecosystem.
   Using the Google Maps API can introduce several challenges:
@@ -324,7 +324,7 @@ Using `react-native-maps` for rendering the map
 
 
 
-Integration with `expo-location` to get GPS data
+##Integration with `expo-location` to get GPS data
 
   Expo-location allows reading geolocation information from the device. Your app can poll for the current location or subscribe to location update events.
   
@@ -341,7 +341,7 @@ Integration with `expo-location` to get GPS data
    
      
 
-Features 
+##Features 
 
   This code tracks the user's real-time location using Location.watchPositionAsync with high accuracy, updating every second. The latitude and longitude are stored in state, and the path coordinates are   updated to draw the user's movement on a map. Once initialized, tracking is ready, indicated by setLoading(false).
    
@@ -364,26 +364,26 @@ Features
 
 
 
-##Backend Architecture
+###Backend Architecture
  
 ![image](https://github.com/user-attachments/assets/348da599-1b1f-4572-8dae-40ff98c3534c)
 
 
-Definition
+###Definition
 
-  React Native :
+  ##React Native :
   
   is Facebook’s open-source cross-platform mobile application development framework, a derivative of React for the native mobile application platform, which supports both iOS and Android platforms. React   Native uses Javascript, similar to HTML’s JSX, and CSS to develop mobile applications, allowing technical staff familiar with web front-end development to start working on mobile application              development with a minimal learning curve. React Native also offers performance and experience close to that of native applications.
   
-  MQTT :
+  ##MQTT :
   
   is a lightweight IoT messaging protocol based on a publish/subscribe model that enables stable transmission over severely constrained hardware devices and low-bandwidth, high-latency networks.            With its easy implementation, QoS support, and small message size, it has been widely used in IoT industry.
   
-  Meta:
+  ##Meta:
   
   Formerly Facebook, Meta is the group that develops React Native, Metro Bundler, Hermes Engine, Yoga and more. The Expo team collaborates with Meta to deliver the best possible developer experience.
 
-Why Not Paho MQTT?
+##Why Not Paho MQTT?
 
   In my React Native project, I utilized the **react-native-mqtt** library to connect to an MQTT broker, which facilitates efficient message communication between clients. While **Paho MQTT** was           considered as an alternative, I opted against it due to several disadvantages:
   
@@ -408,7 +408,7 @@ Why Not Paho MQTT?
 
 
 
-Installation and Setup
+##Installation and Setup
 
 ![image](https://github.com/user-attachments/assets/06454513-52d2-4026-9d82-086569772748)
 
@@ -426,7 +426,7 @@ Transition to TLS WebSocket URL :
 
   Initially, a standard WebSocket URL was used for communication with the MQTT broker. However, the implementation was upgraded to a TLS-secured WebSocket URL. This transition significantly enhances        the security of the connection by encrypting data in transit, protecting against eavesdropping and unauthorized access. The use of TLS ensures compliance with modern security standards and strengthens    the reliability of real-time data exchange.
 
-Using MQTT*
+##Using MQTT*
 
   1.	Connection to Broker:
   The MQTT client is initialized with the broker's WebSocket URL, along with the necessary authentication credentials (username and password). Upon successful connection, the client subscribes to the       designated topic (`live/location`) to receive location updates.
@@ -449,8 +449,10 @@ Using MQTT*
    
 Overall, the use of MQTT in this project facilitates efficient and real-time communication for live location tracking, enhancing the user experience by providing up-to-date positional information.
 
- Lodash 
-Purpose
+## Lodash 
+ 
+Purpose:
+
 In this project, I utilized the  Lodash  library's `throttle` function to optimize the frequency of location updates sent to the MQTT broker. This technique is crucial for managing network resources effectively while ensuring that the application remains responsive.
 
 Key Features of Lodash Throttle Implementation:
@@ -501,7 +503,7 @@ About data consumption, obviously, QoS 2 > QoS 1 > QoS 0, if that's a concern to
 
 
 
-QueryString 
+##QueryString 
 
 Understanding the Difference Between Query, URL Query, and Query String Parameters
 
@@ -536,7 +538,7 @@ qs is a popular npm package used for serializing JavaScript objects into query s
 
 
 
-useref
+##useref:
 
   In this React Native project, the `ref` feature from React is utilized to manage mutable references to components and instances, particularly for the MQTT client. Here’s how `ref` is effectively          implemented:
   
@@ -577,6 +579,7 @@ When the component unmounts, it’s important to clean up any active connections
   We encountered a problem with the application taking too long to load, which led us to use **Lodash** to optimize the frequency of location updates and improve performance. By utilizing **ref**, we efficiently managed the MQTT client instance without causing unnecessary re-renders. Additionally, by setting the quality of service (QoS) level to 0 on the MQTT broker, we reduced overhead since there was no need for QoS 1 or 2, contributing to a faster loading time for the application.
   
   Challenge connect to mqt broker:
+  
   I faced a challenge connecting to the MQTT broker in my project. To troubleshoot, I used MQTT Explorer, a graphical MQTT client, to verify the broker's configuration and connectivity. This tool allowed me to confirm the broker's host, port, authentication settings, and available topics. By successfully subscribing to topics and publishing messages via MQTT Explorer, I ensured the broker was properly configured. This step helped isolate the issue to my application code or network settings. 
 
    ![image](https://github.com/user-attachments/assets/b73fde37-8e7e-4d5d-9c46-d1f863f22810)
