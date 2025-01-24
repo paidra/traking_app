@@ -138,7 +138,7 @@ After running the above command:
  
 3.	Scan that QR code to open the app on the device. use the Expo Go > Scan QR code option. On iOS, use the default camera app.
 
-   ![image](https://github.com/user-attachments/assets/ff37ea8a-3eaf-4c3e-b422-82a01cdba0b7)
+![image](https://github.com/user-attachments/assets/84c57109-f6d2-43ac-bf34-984549dbf3a7)
 
  
 
