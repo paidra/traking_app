@@ -421,6 +421,9 @@ Implementation of MQTT for Real-Time Communication :
 
   To enable real-time communication for live location updates, MQTT (Message Queuing Telemetry Transport) was implemented using react-native-mqtt. The MQTT broker utilized is hosted on HiveMQ, providing     a reliable platform for secure WebSocket connections.
 
+  ![image](https://github.com/user-attachments/assets/b613b16c-89b2-4d13-9d45-33f8f4fb9da5)
+
+
 Transition to TLS WebSocket URL :
 
   Initially, a standard WebSocket URL was used for communication with the MQTT broker. However, the implementation was upgraded to a TLS-secured WebSocket URL. This transition significantly enhances        the security of the connection by encrypting data in transit, protecting against eavesdropping and unauthorized access. The use of TLS ensures compliance with modern security standards and strengthens    the reliability of real-time data exchange.
