@@ -1,4 +1,5 @@
 ##Title
+
 traking app
 A traking app built with React Native / Expo. Using mqtt broker as backend to connect, subscribe and unsubscribe, and send and receive messages(location) from clients to MQTT brokers.
 
@@ -85,8 +86,13 @@ why using ios:
 
 Development Tools Used
   •	[Expo Go](https://expo.dev/go) installed on a physical device(my phone)
+  
   •	[Node.js (LTS version)](https://nodejs.org/en) installed
+  
   •	[VS Code](https://code.visualstudio.com/) or any other preferred code editor or IDE installed
+  
   •	Windows (PowerShell and MINGW64) with a terminal window open 
+  
   •	[HiveMQ](https://www.hivemq.com/products/mqtt-cloud-broker/) cloud a mqtt cloud broker 
+  
   •	[MQTT Explorer ](https://mqtt-explorer.com/)
