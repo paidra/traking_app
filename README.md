@@ -287,9 +287,6 @@ Initialization
 
 Read article posted on [Medium](https://medium.com/quick-code/react-native-location-tracking-14ab2c9e2db8)
 
-![image](https://github.com/user-attachments/assets/4a6ea49f-7881-4597-9d7d-7c9d1746552e)
-
-
 
 First, download the library from npm:
 
