@@ -104,29 +104,29 @@ Development Tools Used
   •	[HiveMQ](https://www.hivemq.com/products/mqtt-cloud-broker/) cloud a mqtt cloud broker 
   
   •	[MQTT Explorer ](https://mqtt-explorer.com/)
-
-
+  
 ##Installation and Setup
 
   Starting the Project:
-    1-Initialize a new Expo app
+  
+  1-Initialize a new Expo app
       We'll use create-expo-app to initialize a new Expo app. It is a command line tool to create a new React Native project. Run the following command in your terminal:
       
 ![image](https://github.com/user-attachments/assets/1de17495-bed6-4d48-b250-87e28aac29d2)
 
  
 
-2-Run the app on mobile 
+  2-Run the app on mobile 
 
   The development server is typically hosted on http://localhost:8081. It hosts a manifest from / which the client uses to request the JavaScript bundle from the bundler.
   
-Manifest:
+  Manifest:
 
-An Expo app manifest is similar to a web app manifest. It provides information that Expo Go needs to know how to run the app and other relevant data.
+  An Expo app manifest is similar to a web app manifest. It provides information that Expo Go needs to know how to run the app and other relevant data.
 
-In the project directory, run the following command to start the development server from the terminal:
+  In the project directory, run the following command to start the development server from the terminal:
  
-After running the above command:
+  After running the above command:
 
 ![image](https://github.com/user-attachments/assets/082d7a6b-07e9-46f5-88ba-b3502b55547b)
 
