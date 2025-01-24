@@ -478,9 +478,18 @@ QoS Levels in MQTT
 Here is how QoS works:
 •	QoS 0 : received at most once : The packet is sent, and that's it. There is no validation about whether it has been received.
 
+![image](https://github.com/user-attachments/assets/f0346be2-c85d-42d0-ab18-d0b1917ab608)
+
+
 •	QoS 1 : received at least once : The packet is sent and stored as long as the client has not received a confirmation from the server. MQTT ensures that it will be received, but there can be duplicates.
 
+![image](https://github.com/user-attachments/assets/7742a2ed-41fe-4da3-9338-734c406b1d2f)
+
+
 •	QoS 2 : received exactly once : Same as QoS 1 but there is no duplicates.
+
+![image](https://github.com/user-attachments/assets/9eb228dc-eb5f-4666-95fb-7e62d7ba1c40)
+
 
 About data consumption, obviously, QoS 2 > QoS 1 > QoS 0, if that's a concern to you.
 
