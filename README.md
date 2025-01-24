@@ -107,7 +107,8 @@ Development Tools Used
 
 
 ##Installation and Setup
-  Starting the Project
+
+  Starting the Project:
     1-Initialize a new Expo app
       We'll use create-expo-app to initialize a new Expo app. It is a command line tool to create a new React Native project. Run the following command in your terminal:
       
